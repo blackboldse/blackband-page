@@ -4,7 +4,8 @@
   --lred: rgb(221, 73, 73);
   --lgrey: rgb(223, 223, 223);
   --white: #fff;
-  --shadow: 0 10px 8px 0 rgba(0 0 0 / 20%), 0 10px 10px 0 rgba(0 0 0 /19%);
+  --shadow-light: 0 2px 5px 0 rgba(0 0 0 / 20%);
+  --shadow: 0 5px 8px 0 rgba(0 0 0 / 20%), 0 5px 5px 0 rgba(0 0 0 /19%);
 }
 
 *, ::after, ::before {
@@ -39,6 +40,7 @@ nav {
   left: 0;
   height: 46px;
   background-color: var(--black);
+  box-shadow: var(--shadow-light);
 }
 
 #nav {
@@ -96,6 +98,7 @@ nav {
     }
     .btn-right:hover {
       color: var(--white);
+      cursor: pointer;
       background-color: var(--lred);
       transition: all 0.3s;
     }
