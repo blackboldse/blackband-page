@@ -24,16 +24,17 @@ html {
 
 #nav li {
     position: relative;
-    display: inline-block;
     text-transform: uppercase;
-    line-height: 46px;
 }
 
 #nav li a {
-    padding: 0 1.5rem;
-}
-#nav > li > a {
+    display: inline-block;
     color: #fff;
+    padding: 0 1.5rem;
+    line-height: 46px;
+}
+#nav > li > a{
+    color: #000;
 }
 #nav li:hover {
     background: #8c8c8c;
