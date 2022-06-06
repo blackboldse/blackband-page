@@ -18,15 +18,11 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-ul, li, a {
-  list-style-type: none;
+ul, li {
+  list-style: none;
 }
 a {
   text-decoration: none;
-}
-
-nav {
-  display: block;
 }
 
 /* END RESET */
@@ -42,12 +38,16 @@ nav {
   background-color: var(--black);
   box-shadow: var(--shadow-light);
 }
-
+#header > ul {
+  display: flex;
+}
 #nav {
   display: inline-block;
 }
-  #nav > li {
-    display: inline-block;
+#nav > li {
+  display: inline-block;
+}
+#nav li {
     position: relative;
   }
   #nav > li:hover > a,
@@ -72,18 +72,19 @@ nav {
       position: absolute;
       left: 0;
       top: 100%;
-      box-shadow: var(--shadow);
       min-width: 160px;
-      border: none;
       overflow: hidden;
     }
     #nav .subnav a {
+      border: none;
       color: var(--black);
       padding: 0 16px;
       line-height: 38px;
     }
     li:hover .subnav {
       display: block;
+      background-color: var(--white);
+      box-shadow: var(--shadow);
     }
     /* search icon */
     .btn-search {
