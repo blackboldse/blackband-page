@@ -29,11 +29,11 @@ html {
     line-height: 46px;
 }
 
-#nav > li > a {
-    color: #fff;
-}
 #nav li a {
     padding: 0 1.5rem;
+}
+#nav > li > a {
+    color: #fff;
 }
 #nav li:hover {
     background: #8c8c8c;
