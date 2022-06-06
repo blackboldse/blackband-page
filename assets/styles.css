@@ -1,67 +1,98 @@
 :root {
-  --clr-primary-1: rgb(0,0,0);
-  --clr-primary-2: #e25141;
-  --clr-primary-3: #ccc;
-  --clr-white: #fff;
-  --shadow: 0 4px 10px 0 rgb(0 0 0 / 20%) , 0 4px 20px 0 rgb(0 0 0 / 19%);
+  --black: rgb(0,0,0);
+  --red: rgb(185, 33, 32);
+  --lred: rgb(221, 73, 73);
+  --vlred: rgba(245, 212, 212, 1);
+  --drred: darken(var(--red), 7%);
+  --white: #fff;
+  --shadow: 0 10px 8px 0 rgba(0 0 0 / 20%), 0 10px 10px 0 rgba(0 0 0 /19%);
 }
-/* RESET */
-*, ::before, ::after {
+
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-ul, li {
-  list-style: none;
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+ul, li, a {
+  list-style-type: none;
 }
 a {
   text-decoration: none;
 }
-html, body {
-  font-family: Helvetica, Arial, sans-serif;
-}
-/* END RESET CSS */
 
-/* RESUABLE */
-
-#nav {
-  height: 46px;
-  background: var(--clr-primary-1);
+nav {
+  display: block;
 }
 
-#nav > li {
-  padding: 12px 24px;
-  display: inline-block;
+.right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.menu-wrapper {
   position: relative;
-  line-height: 1.5;
-}
-#nav > li > a {
-  color: var(--clr-white);
+  z-index: 10;
   text-transform: uppercase;
+  background: var(--black);
 }
-#nav li:hover a {
-  color: var(--clr-primary-1);
-}
-#nav li:hover {
-  background: var(--clr-primary-3);
-}
-#nav .subnav {
-  border: none;
-  background: var(--clr-white);
-  box-shadow: var(--shadow);
-  display: none;
-  position: absolute;
-  min-width: 10rem;
-  top: 46px;
-  left: 0;
-}
-#nav .subnav li {
-  line-height: 1.2;
-  padding: 8px 16px;
-}
-#nav .subnav a {
-  color: var(--clr-primary-1);
-}
-#nav .subnav li:hover {
-  position: relative;
-}
+  .menu-wrapper .menu {
+    margin: 0;
+    padding-left: 0;
+  }
+  .menu > li {
+    position: relative;
+    padding: 12px 24px;
+    display: inline-block;
+  }
+  .menu li a {
+    color: var(--white);
+  }
+  a.menu-link {
+    display: none;
+    padding: 12px 24px;
+  }
+  a {
+    display: block;
+    position: relative;
+    /* padding: 8px 16px; */
+    line-height: 1.2em;
+  }
+
+  .menu li:hover{
+    cursor: pointer;
+    transition: all 0.2s;
+    background: var(--vlred);
+  }
+
+  /* submenu */
+  ul.sub-menu {
+    padding: 0;
+    margin: 0;
+  }
+  .sub-menu {
+    position: absolute;
+    overflow: hidden;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    left: 0;
+    top: 43.2px;
+    max-height: 0;
+  }
+  .sub-menu li {
+    padding: 8px 16px;
+    min-width: 120px;
+  }
+  .sub-menu li a {
+    text-transform: capitalize;
+    color: var(--black);
+    border: none;
+  }
+  /* 2nd level */
+  li:hover .sub-menu {
+    max-height: 160px;
+  }
