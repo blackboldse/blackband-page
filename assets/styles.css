@@ -30,16 +30,19 @@ nav {
 
 /* END RESET */
 .main {
-
 }
 
 #header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 46px;
   background-color: var(--black);
 }
 
 #nav {
-
+  display: inline-block;
 }
   #nav > li {
     display: inline-block;
@@ -81,13 +84,20 @@ nav {
       display: block;
     }
     /* search icon */
-    .right {
+    .btn-search {
       float: right;
-      padding: 12px 24px;
+      color: var(--white);
+      font-size: 18px;
     }
-    .right:hover {
+    .btn-right {
+      padding: 0 24px;
+      line-height: 46px;
+
+    }
+    .btn-right:hover {
       color: var(--white);
       background-color: var(--lred);
+      transition: all 0.3s;
     }
 
 #slider {
