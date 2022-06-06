@@ -23,19 +23,20 @@ html {
 }
 
 #nav li {
+    display: inline-block;
     position: relative;
     text-transform: uppercase;
 }
 
-#nav li a {
-    display: inline-block;
+#nav > li > a{
     color: #fff;
+}
+
+#nav li a {
     padding: 0 1.5rem;
     line-height: 46px;
 }
-#nav > li > a{
-    color: #000;
-}
+
 #nav li:hover {
     background: #8c8c8c;
 }
@@ -43,6 +44,10 @@ html {
 #nav .subnav {
     position: absolute;
     background-color: #fff;
+}
+#nav .subnav a {
+    color: #000;
+    display: block;
 }
 #nav .subnav li{
     /* display: none; */
@@ -52,22 +57,6 @@ html {
 #hero {
     min-height: 800px;
     background-color: #8c8c8c;
-}
-
-#tour {
-
-}
-
-#contact {
-
-}
-
-#maps {
-
-}
-
-.footer {
-
 }
 
 
