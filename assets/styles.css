@@ -7,7 +7,7 @@
   --shadow: 0 10px 8px 0 rgba(0 0 0 / 20%), 0 10px 10px 0 rgba(0 0 0 /19%);
 }
 
-html, body {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,70 +28,56 @@ nav {
   display: block;
 }
 
-.right {
-  float: right;
-  margin-left: 1rem;
+/* END RESET */
+.main {
+
 }
 
-.menu-wrapper {
-  position: relative;
-  z-index: 10;
-  text-transform: uppercase;
-  background: var(--black);
+#header {
+  height: 46px;
+  background-color: var(--black);
 }
-  .menu-wrapper .menu {
-    margin: 0;
-    padding-left: 0;
-  }
-  .menu > li {
-    position: relative;
-    padding: 12px 24px;
+
+#nav {
+  /* display: block; */
+}
+  #nav li {
     display: inline-block;
   }
-  .menu li a {
-    color: var(--white);
-  }
-  a.menu-link {
-    display: none;
-    padding: 12px 24px;
-  }
-  a {
-    display: block;
-    position: relative;
-    /* padding: 8px 16px; */
-    line-height: 1.2em;
-  }
-
-  .menu li:hover{
-    cursor: pointer;
-    transition: all 0.2s;
-    background: var(--vlred);
-  }
-
-  /* submenu */
-  ul.sub-menu {
-    padding: 0;
-    margin: 0;
-  }
-  .sub-menu {
-    position: absolute;
-    overflow: hidden;
-    background: var(--white);
-    box-shadow: var(--shadow);
-    left: 0;
-    top: 43.2px;
-    max-height: 0;
-  }
-  .sub-menu li {
-    padding: 8px 16px;
-    min-width: 120px;
-  }
-  .sub-menu li a {
-    text-transform: capitalize;
+  #nav li:hover a{
     color: var(--black);
-    border: none;
+    background-color: var(--lgrey);
   }
-  /* 2nd level */
-  li:hover .sub-menu {
-    max-height: 160px;
+  #nav li a {
+    padding: 0 24px;
+    color: var(--white);
+    line-height: 46px;
+    display: inline-block;
   }
+  #nav > li > a {
+    text-transform: uppercase;
+  }
+
+  /* subnav */
+  .subnav {
+    display: none;
+  }
+#slider {
+
+}
+
+#about {
+
+}
+
+#tour {
+
+}
+
+#contact {
+
+}
+
+#footer {
+
+}
