@@ -46,6 +46,10 @@ html {
 #nav .subnav li{
     /* display: none; */
     text-transform: capitalize;
+    display: block;
+}
+#nav .subnav a {
+    color: #000;
 }
 
 #hero {
