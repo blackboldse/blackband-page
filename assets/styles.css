@@ -2,8 +2,7 @@
   --black: rgb(0,0,0);
   --red: rgb(185, 33, 32);
   --lred: rgb(221, 73, 73);
-  --vlred: rgba(245, 212, 212, 1);
-  --drred: darken(var(--red), 7%);
+  --lgrey: rgb(246, 241, 241);
   --white: #fff;
   --shadow: 0 10px 8px 0 rgba(0 0 0 / 20%), 0 10px 10px 0 rgba(0 0 0 /19%);
 }
