@@ -2,7 +2,7 @@
   --black: rgb(0,0,0);
   --red: rgb(185, 33, 32);
   --lred: rgb(221, 73, 73);
-  --lgrey: rgb(246, 241, 241);
+  --lgrey: rgb(223, 223, 223);
   --white: #fff;
   --shadow: 0 10px 8px 0 rgba(0 0 0 / 20%), 0 10px 10px 0 rgba(0 0 0 /19%);
 }
@@ -39,29 +39,57 @@ nav {
 }
 
 #nav {
-  /* display: block; */
+
 }
-  #nav li {
+  #nav > li {
     display: inline-block;
+    position: relative;
   }
-  #nav li:hover a{
+  #nav > li:hover > a,
+  .subnav li:hover{
     color: var(--black);
     background-color: var(--lgrey);
+    transition: all 0.3s;
   }
-  #nav li a {
+  #nav li > a {
     padding: 0 24px;
-    color: var(--white);
     line-height: 46px;
-    display: inline-block;
+    display: block;
   }
   #nav > li > a {
+    color: var(--white);
     text-transform: uppercase;
   }
 
-  /* subnav */
-  .subnav {
-    display: none;
-  }
+    /* subnav */
+    .subnav {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      box-shadow: var(--shadow);
+      min-width: 160px;
+      border: none;
+      overflow: hidden;
+    }
+    #nav .subnav a {
+      color: var(--black);
+      padding: 0 16px;
+      line-height: 38px;
+    }
+    li:hover .subnav {
+      display: block;
+    }
+    /* search icon */
+    .right {
+      float: right;
+      padding: 12px 24px;
+    }
+    .right:hover {
+      color: var(--white);
+      background-color: var(--lred);
+    }
+
 #slider {
 
 }
