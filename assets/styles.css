@@ -38,7 +38,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  height: 46px;
+  right: 0;
   background-color: var(--black);
   box-shadow: var(--shadow-light);
 }
@@ -104,7 +104,9 @@ nav {
     }
 
 #slider {
-
+  margin-top: 46px;
+  height: 1000px;
+  background-color: var(--lgrey);
 }
 
 #about {
