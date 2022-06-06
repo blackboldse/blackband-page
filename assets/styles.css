@@ -105,9 +105,11 @@ nav {
 
 #slider {
   margin-top: 46px;
-  height: 1000px;
-  background-color: var(--lgrey);
+  /* padding-top: 50%; */
 }
+.slide-show {
+    width: 100%;
+  }
 
 #about {
 
