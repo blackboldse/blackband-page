@@ -17,6 +17,9 @@
 body {
   font-family: Helvetica, sans-serif;
 }
+h1,h2,h3,h4,h5, p {
+  display: block;
+}
 
 ul, li {
   list-style: none;
@@ -25,8 +28,11 @@ a {
   text-decoration: none;
 }
 
-/* END RESET */
+
+/* ================ LAYTOUT ================*/
+
 .main {
+  position: relative;
 }
 
 #header {
@@ -41,6 +47,8 @@ a {
 #header > ul {
   display: flex;
 }
+
+/* ================ SECTION NAV ================*/
 #nav {
   display: inline-block;
 }
@@ -104,26 +112,63 @@ a {
       transition: all 0.3s;
     }
 
+/* ================ SECTION SLIDES ================*/
+
 #slider {
   margin-top: 46px;
-  /* padding-top: 50%; */
+}
+.slide {
+  padding-top: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide1 {
+  background-image: url(./img/img-1.avif);
+}
+.slide2 {
+  background-image: url(/assets/img/img-2.avif);
+}
+.slide3 {
+  background-image: url(./img/img-3.avif);
 }
 .slide-show {
-    width: 100%;
-  }
+  padding: 32px 16px;
+}
+.slide-title,
+.slide-desc {
+  color: var(--white);
+  text-align: center;
+}
+.slide-title {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+.slide-desc {
+  font-size: 1rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
 
+
+/* ================ SECTION ABOUT ================*/
 #about {
 
 }
 
+/* ================ SECTION TOUR ================*/
 #tour {
 
 }
 
+/* ================ SECTION CONTACT ================*/
 #contact {
 
 }
 
+/* ================ SECTION FOOTER ================*/
 #footer {
 
 }
