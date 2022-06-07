@@ -1,5 +1,6 @@
 :root {
-  --black: rgb(106, 3, 3);
+  --black: rgb(0, 0, 0);
+  --lblack: rgb(19, 19, 19));
   --red: rgb(185, 33, 32);
   --lred: rgb(221, 73, 73);
   --lgrey: rgb(223, 223, 223);
@@ -162,7 +163,29 @@ a {
   margin-inline-end: 0;
 }
 
-
+/* ================ SECTION CONTENT ================*/
+.content {
+  margin: 0 90px;
+  text-align: center;
+}
+.section-about,
+.section-tour,
+.section-contact {
+  padding: 64px 16px;
+}
+.content-title{
+  opacity: .8;
+  text-transform: uppercase;
+  margin: 12px 0px;
+}
+.content-subtitle {
+  font-style: italic;
+  opacity: .6;
+  margin: 16px 0;
+}
+.content-desc {
+  text-align: justify;
+}
 /* ================ SECTION ABOUT ================*/
 #about {
 
