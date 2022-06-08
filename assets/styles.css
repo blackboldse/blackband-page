@@ -233,8 +233,6 @@ p {
   .member-pic:hover {
     transition: all .3s;
     transform: translateY(.25rem);
-    font-weight: bold;
-    color: var(--lblack);
   }
 
 /* ================ SECTION TOUR ================*/
