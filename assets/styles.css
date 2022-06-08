@@ -230,7 +230,7 @@ p {
     box-shadow: var(--lshadow);
   }
   /* HOVER */
-  .member-pic:hover {
+  .member-item:hover{
     transition: all .3s;
     transform: translateY(.25rem);
   }
