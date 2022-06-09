@@ -1,6 +1,6 @@
 :root {
   --black: rgb(0, 0, 0);
-  --lblack: rgb(42, 41, 41);
+  --lblack: rgb(31, 30, 30);
   --red: rgb(229, 43, 43);
   --lred: rgb(221, 73, 73);
   --lgrey: rgb(223, 223, 223);
@@ -323,27 +323,50 @@ p {
       .describe{
         font-size: 14px;
       }
-      button {
-        cursor: pointer;
-        /* width: 100%; */
-      }
+      /* button BUY TICKETS */
       .btn-buy {
         color: var(--white);
         background: var(--lblack);
-        border: none;
         padding: 12px 16px;
         border-radius: 2px;
-        font-size: 15px;
-        font-family: "Lato", sans-serif;
         margin: 14px 0;
         box-shadow: var(--lshadow);
         text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        transition: .2s ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        /* width: 100%; */
+        /* outline: 1px solid var(--white); */
+        /* outline-offset: -4px; */
       }
-        .btn-buy:hover {
-          opacity: .8;
+        .btn-buy:hover,
+        .btn-buy:focus{
+          opacity: .9;
           transform: translateY(-2px);
-          transition: .2s ease;
         }
+
+/* ================ MODAL FOR TICKETS ================*/
+/* .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0 0 0 / 40%);
+  z-index: 999;
+}
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  width: 900px;
+  min-height: 300px;
+} */
 
 /* ================ SECTION CONTACT ================*/
 #contact {
