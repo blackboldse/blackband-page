@@ -397,7 +397,8 @@ button {
 .modal-header{
   background: var(--clr-modal);
   color: var(--white);
-  display: flex;
+/*   display: flex; */
+  display: none;
   justify-content: center;
   align-items: center;
   text-align: center;
