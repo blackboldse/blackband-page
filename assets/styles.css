@@ -9,6 +9,7 @@
   --lshadow: 0 4px 8px 0 rgba(0 0 0 / 20%);
   --shadow: 0 5px 8px 0 rgba(0 0 0 / 20%), 0 5px 5px 0 rgba(0 0 0 /19%);
   --clr-modal: #009688;
+  --clr-modal-help: #2196f3;
 }
 
 *, ::after, ::before {
@@ -444,6 +445,9 @@ button {
 }
 .modal-help {
   float: right;
+}
+.modal-help a {
+  color: var(--clr-modal-help);
 }
 /* ================ SECTION CONTACT ================*/
 #contact {
