@@ -177,7 +177,7 @@ p {
   text-transform: uppercase;
   margin: 12px 0px;
   letter-spacing: .2em;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.875rem;
   text-align: center;
 }
@@ -185,6 +185,7 @@ p {
   font-style: italic;
   text-align: center;
   opacity: .6;
+  font-weight: 300;
 }
 .content-desc {
   text-align: justify;
