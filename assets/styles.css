@@ -58,7 +58,7 @@ p {
   left: 0;
   right: 0;
   background-color: var(--black);
-  box-shadow: var(--shadow-light);
+  box-shadow: var(--shadow);
   z-index: 1;
 }
 #header > ul {
@@ -340,8 +340,9 @@ p {
         text-transform: uppercase;
       }
         .btn-buy:hover {
-          color: var(--white);
-          background: var(--lred);
+          opacity: .8;
+          transform: translateY(-2px);
+          transition: .2s ease;
         }
 
 /* ================ SECTION CONTACT ================*/
