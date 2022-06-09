@@ -247,10 +247,13 @@ p {
 .list-tickets{
   background-color: var(--white);
   margin-top: 32px;
+  border: 1px solid var(--lgrey);
 }
 .list-tickets li {
   border-bottom: 1px solid var(--lgrey);
   color: grey;
+  font-size: 15px;
+  margin: 2px 0px;
 }
 .list-tickets li:last-child {
   border-bottom: none;
