@@ -175,22 +175,37 @@
   </div>
   <div class="modal">
     <div class="modal-container">
-      <button class="btn-modal">
+      <button class="btn-modal-close">
         <i class="fa-solid fa-xmark icon-modal-close"></i>
       </button>
+
       <div class="modal-header">
-        <i class="fa-solid fa-briefcase"></i>
+        <i class="fa-solid fa-briefcase icon-modal-header"></i>
         Tickets
       </div>
 
       <div class="modal-desc">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <label for="modal-quantity">Tickets, $15 per person</label>
-        <input class="modal-quantity" type="text" placeholder="How much do you want?">
+        <label for="modal-quantity">
+          <i class="fa-solid fa-cart-shopping icon-modal-quantity"></i>
+          Tickets, $15 per person
+        </label>
+        <input id="modal-quantity" type="number" placeholder="How much do you want?" required>
 
-        <i class="fa-solid fa-user"></i>
-        <label for="modal-email">Tickets, $15 per person</label>
-        <input class="modal-email" type="email" placeholder="Enter your email...">
+        <label for="modal-email">
+          <i class="fa-solid fa-user icon-modal-user"></i>
+          Send to
+        </label>
+        <input id="modal-email" type="email" placeholder="Enter your email..." required>
+
+        <button class="btn-pay" type="button">
+          PAY NOW
+        </button>
+
+        <div class="modal-footer">
+          <p class="modal-help">
+            Need<a href=""> help?</a>
+          </p>
+        </div>
 
       </div>
     </div>

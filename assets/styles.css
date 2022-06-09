@@ -8,6 +8,7 @@
   --hover: 0 4px 12px rgb(0 0 0 / 15%);
   --lshadow: 0 4px 8px 0 rgba(0 0 0 / 20%);
   --shadow: 0 5px 8px 0 rgba(0 0 0 / 20%), 0 5px 5px 0 rgba(0 0 0 /19%);
+  --clr-modal: #009688;
 }
 
 *, ::after, ::before {
@@ -39,6 +40,23 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+label{
+  display: block;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  transition: .2s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-decoration: none;
+          /* width: 100%; */
+        /* outline: 1px solid var(--white); */
+        /* outline-offset: -4px; */
 }
 
 .text-white {
@@ -332,16 +350,7 @@ p {
         margin: 14px 0;
         box-shadow: var(--lshadow);
         text-transform: uppercase;
-        cursor: pointer;
-        border: none;
-        font-family: "Lato", sans-serif;
         font-size: 15px;
-        transition: .2s ease;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        /* width: 100%; */
-        /* outline: 1px solid var(--white); */
-        /* outline-offset: -4px; */
       }
         .btn-buy:hover,
         .btn-buy:focus{
@@ -350,24 +359,92 @@ p {
         }
 
 /* ================ MODAL FOR TICKETS ================*/
-/* .modal {
+.modal {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0 0 0 / 40%);
-  z-index: 999;
-}
-.modal-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgba(0 0 0 / 40%);
+  z-index: 999;
+  padding: 0 16px;
+}
+.modal-container {
   background: var(--white);
+  border-radius: 10px;
   width: 900px;
   min-height: 300px;
-} */
+  position: relative;
+}
 
+.btn-modal-close{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--white);
+  padding: 16px 28px;
+  font-size: 24px;
+  background: none;
+}
+.btn-modal-close:hover {
+  opacity: .8;
+}
+
+.modal-header{
+  background: var(--clr-modal);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 128px;
+  font-size: 32px;
+  letter-spacing: 4px;
+  border-radius: 10px 10px 0 0;
+}
+.icon-modal-header{
+  margin-right: 16px;
+  font-size: 30px;
+}
+
+.modal-desc{
+  padding: 16px 28px;
+}
+.modal-desc input {
+  padding: 10px;
+  border: 1px solid var(--lgrey);
+  border-radius: 4px;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.modal-desc label {
+  margin-bottom: 8px;
+}
+.icon-modal-quantity,
+.icon-modal-user {
+  margin-right: 8px;
+}
+.btn-pay{
+  width: 100%;
+  background: var(--clr-modal);
+  color: var(--white);
+  font-size: 16px;
+  padding: 16px 0;
+  border-radius: 4px;
+}
+.btn-pay:hover {
+  opacity: .9;
+}
+.modal-footer {
+  margin: 16px 0;
+}
+.modal-help {
+  float: right;
+}
 /* ================ SECTION CONTACT ================*/
 #contact {
 
