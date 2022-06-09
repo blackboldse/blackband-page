@@ -295,17 +295,21 @@ p {
       height: 240px;
       object-fit: cover;
     }
+      .place-img:hover {
+        opacity: .8;
+      }
     .place-desc{
       margin: 16px;
     }
       .location{
-
+        font-size: 15px;
       }
       .date{
         color: grey;
+        font-size: 15px;
       }
       .describe{
-
+        font-size: 14px;
       }
       button {
         cursor: pointer;
