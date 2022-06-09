@@ -300,6 +300,7 @@ p {
       width: 100%;
       height: 240px;
       object-fit: cover;
+      transition: opacity .2s ease;
     }
       .place-img:hover {
         opacity: .8;
@@ -324,6 +325,7 @@ p {
       }
       button {
         cursor: pointer;
+        /* width: 100%; */
       }
       .btn-buy {
         color: var(--white);
@@ -335,7 +337,7 @@ p {
         font-family: "Lato", sans-serif;
         margin: 14px 0;
         box-shadow: var(--lshadow);
-
+        text-transform: uppercase;
       }
         .btn-buy:hover {
           color: var(--white);
