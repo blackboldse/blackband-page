@@ -366,15 +366,17 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  /* display: flex;
-   */
-  display: none;
   justify-content: center;
   align-items: center;
   background: rgba(0 0 0 / 40%);
   z-index: 999;
   padding: 0 16px;
+  display: none;
 }
+.modal.open {
+  display: flex;
+}
+
 .modal-container {
   background: var(--white);
   border-radius: 10px;
@@ -431,7 +433,7 @@ button {
 .icon-modal-user {
   margin-right: 8px;
 }
-.btn-pay{
+.modal-btn-pay{
   width: 100%;
   background: var(--clr-modal);
   color: var(--white);
@@ -439,7 +441,7 @@ button {
   padding: 16px 0;
   border-radius: 4px;
 }
-.btn-pay:hover {
+.modal-btn-pay:hover {
   opacity: .9;
 }
 .modal-footer {
