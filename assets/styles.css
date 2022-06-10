@@ -313,7 +313,6 @@ button {
       }
       /* button BUY TICKETS */
       .btn-buy {
-        color: var(--white);
         background: var(--lblack);
         padding: 12px 16px;
         border-radius: 2px;
