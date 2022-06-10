@@ -383,6 +383,8 @@ button {
   width: 900px;
   min-height: 300px;
   position: relative;
+  -webkit-animation: fadeInDown 500ms ease-in-out;
+  animation: fadeInDown 500ms ease-in-out;
 }
 
 .btn-modal-close{
@@ -453,6 +455,24 @@ button {
 .modal-help a {
   color: var(--clr-modal-help);
 }
+
+/* animation for modal */
+/* .fadeInDown {
+  -webkit-animation: fadeInDown 500ms ease-in-out;
+  animation: fadeInDown 500ms ease-in-out;
+} */
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
 /* ================ SECTION CONTACT ================*/
 #contact {
 
