@@ -66,9 +66,23 @@ button {
   grid-gap: 32px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
+.col-2 {
+  padding: 32px 0;
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: 1fr, 1fr;
+}
 
 .txt-white {
   color: var(--white) !important;
+}
+textarea,
+.input input{
+  padding: 10px;
+  border: 1px solid var(--lgrey);
+  border-radius: 4px;
+  font-size: 15px;
+  margin-bottom: 24px;
 }
 
 .txt-center {
@@ -78,7 +92,23 @@ button {
 .w100 {
   width: 100%;
 }
+.w50 {
+  width: 50%;
+}
 
+.mr-8 {
+  margin-right: 8px;
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.mr-24 {
+  margin-right: 24px;
+}
+
+.section {
+  padding: 64px 0;
+}
 /* ================ LAYTOUT ================*/
 
 .main {
@@ -145,16 +175,15 @@ button {
       box-shadow: var(--shadow);
     }
     /* search icon */
-    .btn-search {
+    .header-search {
       float: right;
       font-size: 18px;
     }
-    .btn-right {
+    .icon-header__search {
       padding: 0 24px;
       line-height: 46px;
-
     }
-    .btn-right:hover {
+    .icon-header__search:hover {
       color: var(--white);
       cursor: pointer;
       background-color: var(--lred);
@@ -199,11 +228,7 @@ button {
   margin-right: auto;
   max-width: 800px;
 }
-.section-band,
-.section-tour,
-.section-contact {
-  padding: 64px 16px;
-}
+
 .content-title{
   opacity: .8;
   text-transform: uppercase;
@@ -312,7 +337,7 @@ button {
         font-size: 14px;
       }
       /* button BUY TICKETS */
-      .btn-buy {
+      .button {
         background: var(--lblack);
         padding: 12px 16px;
         border-radius: 2px;
@@ -320,6 +345,7 @@ button {
         box-shadow: var(--lshadow);
         text-transform: uppercase;
         font-size: 15px;
+        transition: opacity .2s ease-in-out;
       }
         .btn-buy:hover,
         .btn-buy:focus{
@@ -378,27 +404,17 @@ button {
   border-radius: 10px 10px 0 0;
 }
 .icon-modal-header{
-  margin-right: 16px;
   font-size: 30px;
 }
 
 .modal-desc{
   padding: 16px 28px;
 }
-.modal-desc input {
-  padding: 10px;
-  border: 1px solid var(--lgrey);
-  border-radius: 4px;
-  font-size: 15px;
-  margin-bottom: 24px;
-}
+
 .modal-desc label {
   margin-bottom: 8px;
 }
-.icon-modal-quantity,
-.icon-modal-user {
-  margin-right: 8px;
-}
+
 .modal-btn-pay{
   background: var(--clr-modal);
   font-size: 16px;
@@ -436,11 +452,29 @@ button {
 }
 
 /* ================ SECTION CONTACT ================*/
-#contact {
-
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 36px 0;
 }
 
+.icons {
+  color: var(--clr-modal);
+}
+
+#contact-message {
+  font-family: "Lato", sans-serif;
+  resize: none;
+}
+.button-submit {
+  background: var(--clr-modal);
+}
+
+.contact-label {
+  padding: 8px;
+}
+
+.button-submit:hover {
+  opacity: .8;
+}
 /* ================ SECTION FOOTER ================*/
-#footer {
-
-}

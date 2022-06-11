@@ -29,8 +29,8 @@
     <!-- ================= HEADER =================-->
     <div id="header" class="w100">
       <!-- search button -->
-      <div class="btn-search txt-white">
-        <i class="fa-solid fa-magnifying-glass btn-right"></i>
+      <div class="header-search txt-white">
+        <i class="fa-solid fa-magnifying-glass icon-header__search"></i>
       </div>
       <!-- navigation -->
       <ul id="nav" role="navigation">
@@ -80,8 +80,7 @@
     <!-- ================= CONTENTS =================-->
     <div class="content">
       <!-- ================= SECTION BAND =================-->
-      <div id="band" class="section-band">
-        <div class="band-intro">
+      <div id="band" class="section-band section        <div class="band-intro">
           <h2 class="content-title txt-center">The band</h2>
           <p class="content-subtitle txt-center">We love music</p>
           <p class="content-desc">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -120,7 +119,7 @@
     </div>
 
     <!-- ================= SECTION TOUR =================-->
-    <div class="section-tour" id="tour">
+    <div id="tour" class="section-tour section">
       <div class="content-tour content">
         <h2 class="content-title txt-white txt-center">Tour dates</h2>
         <p class="content-subtitle txt-white txt-center">Remember to book your tickets!</p>
@@ -140,7 +139,7 @@
               <p><b class="location">New York</b></p>
               <p class="date">Web 8 Jun 2022</p>
               <p class="describe">This, like my last New York shot, was taken during my last trip to New York City. </p>
-              <button class="btn-buy txt-white js-buy-tickets">Buy Tickets</button>
+              <button class="button btn-buy txt-white js-buy-tickets">Buy Tickets</button>
             </div>
           </div>
           <div class="place-item">
@@ -149,7 +148,7 @@
               <p><b class="location">Hong Kong</b></p>
               <p class="date">Web 9 Jun 2019</p>
               <p class="describe">This, like my last New York shot, was taken during my last trip to New York City. </p>
-              <button class="btn-buy txt-white js-buy-tickets">Buy Tickets</button>
+              <button class="button btn-buy txt-white js-buy-tickets">Buy Tickets</button>
             </div>
           </div>
           <div class="place-item">
@@ -158,22 +157,50 @@
               <p><b class="location">Shibuya</b></p>
               <p class="date">Fri 13 Jun 2021</p>
               <p class="describe">This, like my last New York shot, was taken during my last trip to New York City. </p>
-              <button class="btn-buy txt-white js-buy-tickets">Buy Tickets</button>
+              <button class="button btn-buy txt-white js-buy-tickets">Buy Tickets</button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-
     <!-- ================= SECTION CONTACT =================-->
-    <div id="contact" class="section-contact">
+    <div id="contact" class="section-contact section content">
       <h2 class="content-title txt-center">Get in touch</h2>
       <p class="content-subtitle txt-center">Touch with me</p>
+
+        <div class="contact-container">
+          <div class="contact-labels w50">
+            <div class="contact-label">
+              <i class="fa-solid fa-location-dot mr-8 icons icon-label__location"></i>
+              <span>Ho Chi Minh</span>
+            </div>
+            <div class="contact-label">
+              <i class="fa-solid fa-phone mr-8 icons icon-label__phone"></i>
+              <span>(+84) 888 888</span>
+            </div>
+            <div class="contact-label">
+              <i class="fa-solid fa-envelope mr-8 icons icon-label__mail"></i>
+              <span>localmail@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-inputs input">
+            <form class="contact-input">
+              <input type="text" id="contact-name" class="w100" name="name" placeholder="Enter your name" required>
+              <input type="email" id="contact-email" class="w100" name="email" placeholder="Enter your email" required>
+              <textarea name="message" id="contact-message"  class="w100" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+              <button type="submit" class="button w100 button-submit txt-center txt-white">Submit</button>
+            </form>
+          </div>
+                </div>
+        </div>
+
     </div>
 
+
+
   <!-- ================= MODAL BUY TICKETS =================-->
-  </div>
   <div class="modal js-modal">
     <div class="modal-container js-modal-container">
       <button class="btn-modal-close txt-white js-modal-close">
@@ -181,22 +208,22 @@
       </button>
 
       <div class="modal-header txt-white txt-center">
-        <i class="fa-solid fa-briefcase icon-modal-header"></i>
+        <i class="fa-solid fa-briefcase icon-modal-header mr-16"></i>
         Tickets
       </div>
 
-      <div class="modal-desc">
+      <div class="modal-desc input">
         <label for="modal-quantity">
-          <i class="fa-solid fa-cart-shopping icon-modal-quantity"></i>
+          <i class="fa-solid fa-cart-shopping mr-8"></i>
           Tickets, $15 per person
         </label>
-        <input class="w100" id="modal-quantity" type="number" placeholder="How much do you want?" required>
+        <input class="w100" id="modal-quantity"  type="number" placeholder="How much do you want?" required>
 
         <label for="modal-email">
-          <i class="fa-solid fa-user icon-modal-user"></i>
+          <i class="fa-solid fa-user mr-8"></i>
           Send to
         </label>
-        <input class="w100" id="modal-email" type="email" placeholder="Enter your email..." required>
+        <input class="w100" id="modal-email"  type="email" placeholder="Enter your email..." required>
 
         <button class="modal-btn-pay txt-white w100" type="button">
           <span class="modal-btn-pay__label">PAY NOW</span>
