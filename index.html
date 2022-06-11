@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/styles.css">
 
@@ -172,15 +173,15 @@
         <div class="contact-container">
           <div class="contact-labels w50">
             <div class="contact-label">
-              <i class="fa-solid fa-location-dot mr-8 icons icon-label__location"></i>
+              <i class="fa-solid fa-location-dot mr-16 icons icon-label__location"></i>
               <span>Ho Chi Minh</span>
             </div>
             <div class="contact-label">
-              <i class="fa-solid fa-phone mr-8 icons icon-label__phone"></i>
+              <i class="fa-solid fa-phone mr-16 icons icon-label__phone"></i>
               <span>(+84) 888 888</span>
             </div>
             <div class="contact-label">
-              <i class="fa-solid fa-envelope mr-8 icons icon-label__mail"></i>
+              <i class="fa-solid fa-envelope mr-16 icons icon-label__mail"></i>
               <span>localmail@gmail.com</span>
             </div>
           </div>
@@ -190,12 +191,11 @@
               <input type="text" id="contact-name" class="w100" name="name" placeholder="Enter your name" required>
               <input type="email" id="contact-email" class="w100" name="email" placeholder="Enter your email" required>
               <textarea name="message" id="contact-message"  class="w100" cols="30" rows="10" placeholder="Write your message here..."></textarea>
-              <button type="submit" class="button w100 button-submit txt-center txt-white">Submit</button>
+              <input type="submit" class="button w100 button-submit txt-center txt-white"></input>
             </form>
           </div>
-                </div>
         </div>
-
+      </div>
     </div>
 
 
@@ -225,8 +225,8 @@
         </label>
         <input class="w100" id="modal-email"  type="email" name="email" placeholder="Enter your email..." required>
 
-        <button class="modal-btn-pay txt-white w100" type="button">
-          <span class="modal-btn-pay__label">Pay now</span>
+        <button class="button modal-button-pay txt-white w100" type="button">
+          <span class="modal-button__label">Pay now</span>
         </button>
 
         <div class="modal-footer">
@@ -234,12 +234,21 @@
             Need<a href=""> help?</a>
           </p>
         </div>
-
       </div>
     </div>
   </div>
 
-
+  <!-- ================= MAPS =================-->
+  <div class="maps">
+    <div class="maps-location">
+      <iframe class="w100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685338.9548153516!2d106.23508627126073!3d10.765838314618279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1654933376460!5m2!1sen!2s"
+      style="border:0;"
+      height="800px"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
   <!-- ================= FOOTER =================-->
   <footer class="footer">
     <div class="footer-socials txt-center">
@@ -250,6 +259,7 @@
       <a href="" class="footer-social mr-8"><i class="fa-social fa-brands fa-linkedin"></i></a>
       <a href="" class="footer-social mr-8"><i class="fa-social fa-brands fa-pinterest"></i></a>
     </div>
+    <p class="copyright txt-center">© 2022. Design by BlackBold</p>
   </footer>
 
     <!-- ================= MAIN JS =================-->
