@@ -481,4 +481,18 @@ textarea,
 footer {
   background: #f1f1f1;
   padding: 64px;
+  opacity: .6;
+}
+.footer-socials {
+  margin: 16px 0;
+}
+.footer-social {
+  font-size: 24px;
+}
+.footer-social i {
+  color: grey;
+  -webkit-font-smoothing: antialiased;
+}
+.footer-social:hover {
+  opacity: .9;
 }
