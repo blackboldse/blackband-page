@@ -66,13 +66,6 @@ button {
   grid-gap: 32px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-.col-2 {
-  padding: 32px 0;
-  display: grid;
-  grid-gap: 32px;
-  grid-template-columns: 1fr, 1fr;
-}
-
 .txt-white {
   color: var(--white) !important;
 }
@@ -105,6 +98,9 @@ textarea,
 .mr-24 {
   margin-right: 24px;
 }
+.pt-16 {
+  padding-top: 16px;
+}
 
 .section {
   padding: 64px 16px;
@@ -123,6 +119,7 @@ textarea,
   background-color: var(--black);
   box-shadow: var(--shadow);
   z-index: 1;
+  overflow: hidden;
 }
 #header > ul {
   display: flex;
@@ -192,7 +189,7 @@ textarea,
 
 /* ================ SECTION SLIDES ================*/
 
-#slider {
+/* #slider {
   margin-top: 46px;
   overflow: hidden;
 }
@@ -210,6 +207,29 @@ textarea,
 }
 .slide3 {
   background-image: url(./img/img-3.avif);
+} */
+
+/* SOLUTION SLIDER WITH CSS */
+@-webkit-keyframes slidy {
+  0% {left: 0%}
+  25% {left: 0%}
+  45% {left: -100%}
+  50% {left: -100%}
+  70% {left: -200%}
+  75% {left: -200%}
+  95% {left: -300%}
+  100% {left: -400%}
+}
+#sliders {overflow: hidden;}
+#sliders figure img {width: 20%; float: left; max-height:768px;}
+#sliders figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align-last: left;
+  font-size: 0;
+  animation: 15s slidy infinite;
 }
 
 .slide-title {
@@ -232,7 +252,7 @@ textarea,
 .content-title{
   opacity: .8;
   text-transform: uppercase;
-  margin: 12px 0px;
+  margin: 24px 0px;
   letter-spacing: .1em;
   font-size: 1.875rem;
   font-weight: 400;
@@ -498,4 +518,18 @@ footer {
 
 .copyright {
   font-size: 12px;
+}
+
+
+/* ================ RESPONSIVE FOR DEVICES ================*/
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 85%;
+  }
+
+  .grid-fill {
+
+  }
+
 }
