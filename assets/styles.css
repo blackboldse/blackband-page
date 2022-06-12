@@ -4,6 +4,7 @@
   --red: rgb(229, 43, 43);
   --lred: rgb(221, 73, 73);
   --lgrey: rgb(223, 223, 223);
+  --grey-30: #49454E;
   --white: #fff;
   --hover: 0 4px 12px rgb(0 0 0 / 15%);
   --lshadow: 0 4px 8px 0 rgba(0 0 0 / 20%);
@@ -423,12 +424,12 @@ textarea,
   letter-spacing: 4px;
   border-radius: 10px 10px 0 0;
 }
-.icon-modal-header{
-  font-size: 30px;
-}
-
 .modal-desc{
   padding: 16px 28px;
+}
+
+.modal-label__icon {
+  color: var(--grey-30);
 }
 
 .modal-desc label {
