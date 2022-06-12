@@ -55,9 +55,6 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-decoration: none;
-          /* width: 100%; */
-        /* outline: 1px solid var(--white); */
-        /* outline-offset: -4px; */
 }
 /* ================ RESUABLE ================*/
 .grid-fill{
@@ -119,7 +116,6 @@ textarea,
   background-color: var(--black);
   box-shadow: var(--shadow);
   z-index: 1;
-  overflow: hidden;
 }
 #header > ul {
   display: flex;
@@ -153,12 +149,14 @@ textarea,
 
     /* subnav */
     .subnav {
-      display: none;
       position: absolute;
+      background: var(--white);
       left: 0;
       top: 100%;
       min-width: 160px;
       overflow: hidden;
+
+      display: none;
     }
     #nav .subnav a {
       border: none;
@@ -166,9 +164,8 @@ textarea,
       padding: 0 16px;
       line-height: 38px;
     }
-    li:hover .subnav {
+    #nav li:hover .subnav{
       display: block;
-      background-color: var(--white);
       box-shadow: var(--shadow);
     }
     /* search icon */
@@ -189,7 +186,7 @@ textarea,
 
 /* ================ SECTION SLIDES ================*/
 
-/* #slider {
+#slider {
   margin-top: 46px;
   overflow: hidden;
 }
@@ -202,7 +199,7 @@ textarea,
 .slide1 {
   background-image: url(./img/img-1.avif);
 }
-.slide2 {
+/* .slide2 {
   background-image: url(./img/img-2.avif);
 }
 .slide3 {
@@ -210,7 +207,7 @@ textarea,
 } */
 
 /* SOLUTION SLIDER WITH CSS */
-@-webkit-keyframes slidy {
+/* @-webkit-keyframes slidy {
   0% {left: 0%}
   25% {left: 0%}
   45% {left: -100%}
@@ -224,13 +221,14 @@ textarea,
 #sliders figure img {width: 20%; float: left; max-height:768px;}
 #sliders figure {
   position: relative;
+  display: none;
   width: 500%;
   margin: 0;
   left: 0;
   text-align-last: left;
   font-size: 0;
   animation: 15s slidy infinite;
-}
+} */
 
 .slide-title {
   font-size: 1.6rem;
@@ -453,12 +451,6 @@ textarea,
   color: var(--clr-modal-help);
 }
 
-/* animation for modal */
-/* .fadeInDown {
-  -webkit-animation: fadeInDown 500ms ease-in-out;
-  animation: fadeInDown 500ms ease-in-out;
-} */
-
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -522,14 +514,3 @@ footer {
 
 
 /* ================ RESPONSIVE FOR DEVICES ================*/
-
-@media screen and (max-width: 350px) {
-  html {
-    font-size: 85%;
-  }
-
-  .grid-fill {
-
-  }
-
-}
