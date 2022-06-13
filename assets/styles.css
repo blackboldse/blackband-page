@@ -541,4 +541,28 @@ footer {
   [class*="col-"] {
     width: 100%;
   }
+  .w50 {
+    width: 100%;
+  }
+  .icons {
+    display: block;
+    padding-bottom: 8px;
+    font-size: 24px;
+  }
+  .contact-container {
+    display: block;
+    text-align: center;
+  }
+  .contact-labels {
+    margin-bottom: 24px;
+  }
+  .contact-label {
+    padding-bottom: 16px;
+  }
+  .mr-16 {
+    margin-right: 0;
+  }
+  .mb-32 {
+    margin-bottom: 32px;
+  }
 }
