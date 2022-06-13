@@ -172,6 +172,7 @@ textarea,
       box-shadow: var(--shadow);
     }
     /* search icon */
+    .menu-bar,
     .header-search {
       float: right;
       font-size: 18px;
@@ -285,6 +286,7 @@ textarea,
   }
   /* HOVER */
   .member-item:hover{
+    opacity: .8;
     transition: all .3s;
     transform: translateY(.25rem);
   }
@@ -569,5 +571,25 @@ footer {
   }
   .btn-buy {
     width: 100%;
+  }
+  .header-search {
+    display: none;
+  }
+  .menu-bar {
+    float: right;
+    font-size: 18px;
+    color: var(--white);
+    padding: 16px;
+  }
+    .menu-bar:hover {
+      background: var(--lred);
+      cursor: pointer;
+    }
+
+  .grid-fill {
+    padding: 0;
+  }
+  .ifr-map {
+    height: 400px;
   }
 }
