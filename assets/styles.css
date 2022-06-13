@@ -565,4 +565,7 @@ footer {
   .mb-32 {
     margin-bottom: 32px;
   }
+  .btn-buy {
+    width: 100%;
+  }
 }
