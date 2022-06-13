@@ -117,6 +117,8 @@ textarea,
   background-color: var(--black);
   box-shadow: var(--shadow);
   z-index: 1;
+  overflow: hidden;
+  height: 46px;
 }
 #header > ul {
   display: flex;
