@@ -112,17 +112,16 @@ textarea,
 
 #header {
   position: fixed;
+  height: 46px;
   top: 0;
   left: 0;
   right: 0;
   background-color: var(--docsearch-primary-color);
   box-shadow: var(--shadow);
   z-index: 1;
-  /* overflow: hidden; */
-  height: 46px;
 }
 #header > ul {
-  display: flex;
+  /* display: flex; */
 }
 
 /* ================ SECTION NAV ================*/
@@ -516,92 +515,3 @@ footer {
   font-size: 12px;
 }
 
-
-/* ================ RESPONSIVE FOR DEVICES ================*/
-/* For desktop: */
-.col-1 {width: 8.33333333%;}
-.col-2 {width: 16.66666667%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33333333%;}
-.col-5 {width: 41.66666667%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33333333%;}
-.col-8 {width: 66.66666667%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33333333%;}
-.col-11 {width: 91.66666667%;}
-.col-12 {width: 100%;}
-
-
-/* For mobile phones. */
-@media only screen and (max-width: 48em) {
-  #header > ul {
-    display: block;
-  }
-  #header {
-    overflow: hidden;
-  }
-  #nav > li {
-    display: block;
-  }
-  [class*="col-"] {
-    width: 100%;
-  }
-  .w50 {
-    width: 100%;
-  }
-  .icons {
-    display: block;
-    padding-bottom: 8px;
-    font-size: 24px;
-  }
-  .contact-container {
-    display: block;
-    text-align: center;
-  }
-  .contact-labels {
-    margin-bottom: 24px;
-  }
-  .contact-label {
-    padding-bottom: 16px;
-  }
-  .mr-16 {
-    margin-right: 0;
-  }
-  .mb-32 {
-    margin-bottom: 32px;
-  }
-  .btn-buy {
-    width: 100%;
-  }
-  .header-search {
-    display: none;
-  }
-  .menu-bar {
-    float: right;
-    font-size: 18px;
-    color: var(--white);
-    padding: 16px;
-  }
-    .menu-bar:hover {
-      background: var(--lred);
-      cursor: pointer;
-    }
-    .ico-menu-bar {
-      font-size: 20px;
-    }
-
-  .grid-fill {
-    padding-top: 32px;
-  }
-  .ifr-map {
-    height: 400px;
-  }
-}
-
-/* For desktop devices */
-@media screen and (min-width: 48em) {
-  .menu-bar {
-    display: none;
-  }
-}
