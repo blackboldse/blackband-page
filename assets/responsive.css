@@ -17,6 +17,9 @@
 
 /* For mobile phones. */
 @media only screen and (max-width: 46.1875em) {
+  html {
+    font-size: 85%;
+  }
   #header {
     overflow: hidden;
   }
@@ -45,9 +48,6 @@
   .contact-label {
     padding-bottom: 16px;
   }
-  .mr-16 {
-    margin-right: 0;
-  }
   .mb-32 {
     margin-bottom: 32px;
   }
@@ -57,17 +57,12 @@
   .header-search {
     display: none;
   }
-  .menu-bar {
-    float: right;
-    color: var(--white);
-    padding: 16px;
-  }
     .menu-bar:hover {
       background: rgba(0, 0, 0, .04);
       cursor: pointer;
     }
     .ico-menu-bar {
-      font-size: 20px;
+      color: var(--white);
     }
 
   .grid-fill {
@@ -76,6 +71,11 @@
   .ifr-map {
     height: 400px;
   }
+  /* modal tickets */
+  .modal-header {
+    height: 80px;
+  }
+
 }
 
 /* For desktop devices */

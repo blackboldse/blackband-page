@@ -100,9 +100,11 @@ textarea,
 .pt-16 {
   padding-top: 16px;
 }
-
 .section {
   padding: 64px 16px;
+}
+.no-border {
+  border: none !important;
 }
 /* ================ LAYTOUT ================*/
 
@@ -175,6 +177,7 @@ textarea,
       float: right;
       font-size: 18px;
     }
+    .ico-menu-bar,
     .icon-header__search {
       padding: 0 24px;
       line-height: 46px;
@@ -371,8 +374,9 @@ textarea,
       }
         .btn-buy:hover,
         .btn-buy:focus{
-          opacity: .8;
-          /* background-color: rgba(0, 0, 0, .04); */
+          /* opacity: .8; */
+          background-color: #1565c0;
+          box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
           transform: translateY(-2px);
         }
 
@@ -489,7 +493,8 @@ textarea,
 }
 
 .button-submit:hover {
-  opacity: .9;
+  background: #1565c0;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
 }
 /* ================ SECTION FOOTER ================*/
 footer {
