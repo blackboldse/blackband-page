@@ -1,16 +1,17 @@
 :root {
-  --black: rgb(0, 0, 0);
+  --black: #121212;
   --lblack: rgb(31, 30, 30);
   --red: rgb(229, 43, 43);
   --lred: rgb(221, 73, 73);
   --lgrey: rgb(223, 223, 223);
   --grey-30: #49454E;
   --white: #fff;
-  --hover: 0 4px 12px rgb(0 0 0 / 15%);
   --lshadow: 0 4px 8px 0 rgba(0 0 0 / 20%);
   --shadow: 0 5px 8px 0 rgba(0 0 0 / 20%), 0 5px 5px 0 rgba(0 0 0 /19%);
-  --clr-modal: #009688;
   --clr-modal-help: #2196f3;
+  --docsearch-primary-color: #007FFF;
+  --clr-icons: #007FFF;
+  --clr-button: #007FFF;
 }
 
 *, ::after, ::before {
@@ -114,10 +115,10 @@ textarea,
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--black);
+  background-color: var(--docsearch-primary-color);
   box-shadow: var(--shadow);
   z-index: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 46px;
 }
 #header > ul {
@@ -136,8 +137,7 @@ textarea,
   }
   #nav > li:hover > a,
   .subnav li:hover{
-    color: var(--black);
-    background-color: var(--lgrey);
+    background: rgba(0, 0, 0, .08);
     transition: all 0.3s;
   }
   #nav li > a {
@@ -153,23 +153,22 @@ textarea,
     /* subnav */
     .subnav {
       position: absolute;
-      background: var(--white);
+      background: #358ee7;
       left: 0;
       top: 100%;
       min-width: 160px;
-      overflow: hidden;
-
+      z-index: 10;
       display: none;
+    }
+    #nav li:hover .subnav {
+      display: block;
+      box-shadow: var(--shadow);
     }
     #nav .subnav a {
       border: none;
-      color: var(--black);
+      color: var(--white);
       padding: 0 16px;
       line-height: 38px;
-    }
-    #nav li:hover .subnav{
-      display: block;
-      box-shadow: var(--shadow);
     }
     /* search icon */
     .menu-bar,
@@ -184,7 +183,7 @@ textarea,
     .icon-header__search:hover {
       color: var(--white);
       cursor: pointer;
-      background-color: var(--lred);
+      background-color: rgba(0, 0, 0, .04);
       transition: all 0.3s;
     }
 
@@ -252,7 +251,6 @@ textarea,
 }
 
 .content-title{
-  opacity: .8;
   text-transform: uppercase;
   margin: 24px 0px;
   letter-spacing: .1em;
@@ -293,7 +291,7 @@ textarea,
 
 /* ================ SECTION TOUR ================*/
 .section-tour{
-  background-color: var(--black);
+  background-color: var(--docsearch-primary-color);
 }
 
 .list-tickets{
@@ -324,7 +322,7 @@ textarea,
   float: right;
   width: 24px;
   height: 24px;
-  background: var(--black);
+  background: var(--docsearch-primary-color);
   border-radius: 50%;
   line-height: 24px;
   margin-top: -3px;
@@ -361,20 +359,21 @@ textarea,
       }
       /* button BUY TICKETS */
       .button {
-        background: var(--lblack);
+        background: var(--clr-button);
         padding: 12px 16px !important;
-        border-radius: 2px;
+        border-radius: 4px;
         box-shadow: var(--lshadow);
         text-transform: uppercase;
         font-size: 15px;
-        transition: opacity .2s ease-in-out;
+        /* transition: opacity .2s ease-in-out; */
       }
       .btn-buy {
         margin: 14px 0;
       }
         .btn-buy:hover,
         .btn-buy:focus{
-          opacity: .9;
+          opacity: .8;
+          /* background-color: rgba(0, 0, 0, .04); */
           transform: translateY(-2px);
         }
 
@@ -419,7 +418,7 @@ textarea,
 }
 
 .modal-header{
-  background: var(--clr-modal);
+  background: var(--docsearch-primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,7 +440,7 @@ textarea,
 }
 
 .modal-button-pay{
-  background: var(--clr-modal);
+  background: var(--docsearch-primary-color);
 }
 .modal-button-pay:hover {
   opacity: .9;
@@ -453,7 +452,7 @@ textarea,
   float: right;
 }
 .modal-help a {
-  color: var(--clr-modal-help);
+  color: var(--docsearch-primary-color);
 }
 
 @-webkit-keyframes fadeInDown {
@@ -475,7 +474,7 @@ textarea,
 }
 
 .icons {
-  color: var(--clr-modal);
+  color: var(--clr-icons);
 }
 
 #contact-message {
@@ -483,7 +482,7 @@ textarea,
   resize: none;
 }
 .button-submit {
-  background: var(--clr-modal);
+  background: var(--clr-button);
 }
 
 .contact-label {
@@ -491,7 +490,7 @@ textarea,
 }
 
 .button-submit:hover {
-  opacity: .8;
+  opacity: .9;
 }
 /* ================ SECTION FOOTER ================*/
 footer {
@@ -503,10 +502,10 @@ footer {
   margin: 16px 0;
 }
 .footer-social {
-  font-size: 24px;
+  font-size: 32px;
 }
 .footer-social i {
-  color: grey;
+  color: var(--grey-30);
   -webkit-font-smoothing: antialiased;
 }
 .footer-social:hover {
@@ -538,6 +537,9 @@ footer {
 @media only screen and (max-width: 48em) {
   #header > ul {
     display: block;
+  }
+  #header {
+    overflow: hidden;
   }
   #nav > li {
     display: block;
@@ -585,11 +587,21 @@ footer {
       background: var(--lred);
       cursor: pointer;
     }
+    .ico-menu-bar {
+      font-size: 20px;
+    }
 
   .grid-fill {
-    padding: 0;
+    padding-top: 32px;
   }
   .ifr-map {
     height: 400px;
+  }
+}
+
+/* For desktop devices */
+@media screen and (min-width: 48em) {
+  .menu-bar {
+    display: none;
   }
 }
