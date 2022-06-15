@@ -30,7 +30,12 @@
   #nav {
     display: block;
   }
-
+  #nav .subnav {
+    position: initial;
+  }
+  #nav .subnav a {
+    padding: 8px 32px;
+  }
   [class*="col-"] {
     width: 100%;
   }

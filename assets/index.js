@@ -40,7 +40,8 @@ var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
 for (var i = 0; i < menuItems.length; i++) {
   var menuItem = menuItems[i];
 
-  menuItem.onclick = function() {
-    header.style.height = null;
+  menuItem.onclick = function(event) {
+    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList('subnav');
+    (isParentMenu) ? event.preventDefault() : header.style.height = null;
   }
 }

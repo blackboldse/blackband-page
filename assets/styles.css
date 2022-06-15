@@ -157,7 +157,7 @@ textarea,
     /* subnav */
     .subnav {
       position: absolute;
-      background: #358ee7;
+      background: #007FFF;
       left: 0;
       top: 100%;
       min-width: 160px;
@@ -171,7 +171,6 @@ textarea,
     #nav .subnav a {
       border: none;
       color: var(--white);
-      padding: 0 16px;
       line-height: 38px;
     }
     /* search icon */
