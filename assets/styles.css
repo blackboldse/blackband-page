@@ -57,6 +57,7 @@ button {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-decoration: none;
+  appearance: none;
 }
 /* ================ RESUABLE ================*/
 .grid-fill{
@@ -375,6 +376,7 @@ textarea,
         box-shadow: var(--lshadow);
         text-transform: uppercase;
         font-size: 15px;
+        appearance: none;
         /* transition: opacity .2s ease-in-out; */
       }
       .btn-buy {
