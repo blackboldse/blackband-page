@@ -185,7 +185,7 @@ textarea,
     .icon-header__search:hover {
       color: var(--white);
       cursor: pointer;
-      background-color: rgba(0, 0, 0, .04);
+      background-color: rgba(0, 0, 0, .4);
       transition: all 0.3s;
     }
 
@@ -518,4 +518,12 @@ footer {
 
 .copyright {
   font-size: 12px;
+}
+
+/* menu-bar */
+.hide {
+  display: none;
+}
+.show {
+  display: block;
 }

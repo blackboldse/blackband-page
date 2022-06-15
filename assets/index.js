@@ -22,3 +22,25 @@ const modalContainer = document.querySelector('.js-modal-container')
   modalContainer.addEventListener('click', function(event) {
     event.stopPropagation()
   })
+
+
+// <!-- ===== MENU BAR =====-->
+var header = document.getElementById('header');
+// var menuBar = document.getElementsByClassName('menu-bar');
+var menuBar = document.getElementById('menuBar');
+var headerHeight = header.clientHeight;
+
+menuBar.onclick = function() {
+  var isClosed = header.clientHeight === headerHeight;
+
+  (isClosed) ? header.style.height = 'auto' : header.style.height = null;
+}
+
+var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+for (var i = 0; i < menuItems.length; i++) {
+  var menuItem = menuItems[i];
+
+  menuItem.onclick = function() {
+    header.style.height = null;
+  }
+}
