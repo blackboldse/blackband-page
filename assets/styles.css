@@ -122,9 +122,9 @@ textarea,
   box-shadow: var(--shadow);
   z-index: 1;
 }
-#header > ul {
-  /* display: flex; */
-}
+/* #header > ul {
+  display: flex;
+} */
 
 /* ================ SECTION NAV ================*/
 #nav {
@@ -149,6 +149,9 @@ textarea,
   #nav > li > a {
     color: var(--white);
     text-transform: uppercase;
+  }
+  #nav > li:first-child {
+    display: inline-block;
   }
 
     /* subnav */
@@ -176,6 +179,12 @@ textarea,
     .header-search {
       float: right;
       font-size: 18px;
+    }
+    .menu-bar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
     }
     .ico-menu-bar,
     .icon-header__search {
