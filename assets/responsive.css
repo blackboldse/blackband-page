@@ -84,12 +84,20 @@
   .modal-header {
     height: 80px;
   }
-
+  .mr-0 {
+    margin-right: 0;
+  }
 }
 
 /* For desktop devices */
 @media screen and (min-width: 46.1875em) {
   .menu-bar {
     display: none;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  .button {
+    padding: 16px !important;
   }
 }

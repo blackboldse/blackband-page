@@ -70,10 +70,10 @@ button {
 }
 textarea,
 .input input{
-  padding: 10px;
+  padding: 16px;
   border: 1px solid var(--lgrey);
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 12px;
 }
 
@@ -507,7 +507,7 @@ textarea,
 /* ================ SECTION FOOTER ================*/
 footer {
   background: #f1f1f1;
-  padding: 64px;
+  padding: 64px 0;
   opacity: .6;
 }
 .footer-socials {
@@ -522,6 +522,12 @@ footer {
 }
 .footer-social:hover {
   opacity: .9;
+}
+.contact-label > span > a {
+  font-weight: 600;
+}
+.contact-label span > a:hover {
+  opacity: .7;
 }
 
 .copyright {
