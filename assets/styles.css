@@ -138,7 +138,7 @@ textarea,
   }
   #nav > li:hover > a,
   .subnav li:hover{
-    background: rgba(0, 0, 0, .08);
+    background: rgba(0, 0, 0, .4);
     transition: all 0.3s;
   }
   #nav li > a {
@@ -519,4 +519,3 @@ footer {
 .copyright {
   font-size: 12px;
 }
-
