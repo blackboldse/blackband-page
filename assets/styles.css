@@ -64,7 +64,7 @@ button {
   padding: 32px 0;
   display: grid;
   grid-gap: 32px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .txt-white {
   color: var(--white) !important;
@@ -211,38 +211,8 @@ textarea,
   background-position: center;
 }
 .slide1 {
-  background-image: url(./img/img-1.avif);
+  background-image: url(/assets/img/img-1.webp);
 }
-/* .slide2 {
-  background-image: url(./img/img-2.avif);
-}
-.slide3 {
-  background-image: url(./img/img-3.avif);
-} */
-
-/* SOLUTION SLIDER WITH CSS */
-/* @-webkit-keyframes slidy {
-  0% {left: 0%}
-  25% {left: 0%}
-  45% {left: -100%}
-  50% {left: -100%}
-  70% {left: -200%}
-  75% {left: -200%}
-  95% {left: -300%}
-  100% {left: -400%}
-}
-#sliders {overflow: hidden;}
-#sliders figure img {width: 20%; float: left; max-height:768px;}
-#sliders figure {
-  position: relative;
-  display: none;
-  width: 500%;
-  margin: 0;
-  left: 0;
-  text-align-last: left;
-  font-size: 0;
-  animation: 15s slidy infinite;
-} */
 
 .slide-title {
   font-size: 1.6rem;
@@ -289,8 +259,8 @@ textarea,
   .member-pic {
     border-radius: 10px;
     object-fit: cover;
-    height: 100%;
     border: none;
+    max-height: 80%;
     box-shadow: var(--lshadow);
   }
   /* HOVER */
@@ -468,7 +438,7 @@ textarea,
   color: var(--docsearch-primary-color);
 }
 
-@-webkit-keyframes fadeInDown {
+@keyframes fadeInDown {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-40px);
