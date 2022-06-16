@@ -211,7 +211,7 @@ textarea,
   background-position: center;
 }
 .slide1 {
-  background-image: url(/assets/img/img-1.webp);
+  background-image: url(./assets/img/img-1.webp);
 }
 
 .slide-title {

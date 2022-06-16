@@ -1,7 +1,7 @@
 
 /* ================ RESPONSIVE FOR DEVICES ================*/
 /* For desktop: */
-.col-1 {width: 8.33333333%;}
+/* .col-1 {width: 8.33333333%;}
 .col-2 {width: 16.66666667%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33333333%;}
@@ -12,11 +12,11 @@
 .col-9 {width: 75%;}
 .col-10 {width: 83.33333333%;}
 .col-11 {width: 91.66666667%;}
-.col-12 {width: 100%;}
+.col-12 {width: 100%;} */
 
 
 /* For mobile phones. */
-@media screen and (max-width: 46.25em) {
+@media (max-width: 46.25em){
   html {
     font-size: 85%;
   }
@@ -35,9 +35,6 @@
   }
   #nav .subnav a {
     padding: 8px 32px;
-  }
-  [class*="col-"] {
-    width: 100%;
   }
   .w50 {
     width: 100%;
@@ -87,10 +84,13 @@
   .mr-0 {
     margin-right: 0;
   }
+  img {
+    width: 100%;
+  }
 }
 
 /* For desktop devices */
-@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
   .menu-bar {
     display: none;
   }
@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (min-width: 63.9375em) {
+@media (min-width: 63.9375em) {
   .button {
     padding: 16px !important;
   }
