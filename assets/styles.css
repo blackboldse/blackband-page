@@ -49,6 +49,9 @@ label{
   display: block;
 }
 
+txt-shad {
+  text-shadow: 0 0 1px #121212;
+}
 button {
   border: none;
   cursor: pointer;
@@ -209,7 +212,7 @@ textarea,
   overflow: hidden;
 }
 .slide {
-  padding-top: 46%;
+  padding-top: 44%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
