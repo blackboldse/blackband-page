@@ -21,10 +21,10 @@
     font-size: 85%;
   }
   .grid-fill {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: block;
   }
   img {
-    height: 100%;
+    max-width: 100%;
   }
   #header {
     overflow: hidden;
