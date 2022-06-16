@@ -20,6 +20,12 @@
   html {
     font-size: 85%;
   }
+  .grid-fill {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  img {
+    height: 100%;
+  }
   #header {
     overflow: hidden;
   }
@@ -84,9 +90,6 @@
   .mr-0 {
     margin-right: 0;
   }
-  img {
-    width: 100%;
-  }
 }
 
 /* For desktop devices */
@@ -105,5 +108,11 @@
   }
   .menu-bar {
     display: none;
+  }
+  .grid-fill{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  img {
+    height: 100%;
   }
 }
