@@ -62,9 +62,12 @@ button {
 /* ================ RESUABLE ================*/
 .grid-fill{
   padding: 16px 0;
-  display: grid;
-  grid-gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: 16px;
+  gap: 16px;
+  /* grid-gap: 16px; */
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 }
 .txt-white {
   color: var(--white) !important;
@@ -155,8 +158,8 @@ textarea,
     display: inline-block;
   }
 
-    /* subnav */
-    .subnav {
+  /* subnav */
+  .subnav {
       position: absolute;
       background: #007FFF;
       left: 0;
@@ -173,6 +176,7 @@ textarea,
       border: none;
       color: var(--white);
       line-height: 38px;
+      padding: 0 16px;
     }
     /* search icon */
     .menu-bar,
@@ -347,14 +351,14 @@ textarea,
         text-transform: uppercase;
         font-size: 15px;
         appearance: none;
-        /* transition: opacity .2s ease-in-out; */
+        -webkit-appearance: none;
+        transition: opacity .2s ease-in-out;
       }
       .btn-buy {
         margin: 14px 0;
       }
         .btn-buy:hover,
         .btn-buy:focus{
-          /* opacity: .8; */
           background-color: #1565c0;
           box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
           transform: translateY(-2px);

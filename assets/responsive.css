@@ -1,19 +1,5 @@
 
 /* ================ RESPONSIVE FOR DEVICES ================*/
-/* For desktop: */
-/* .col-1 {width: 8.33333333%;}
-.col-2 {width: 16.66666667%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33333333%;}
-.col-5 {width: 41.66666667%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33333333%;}
-.col-8 {width: 66.66666667%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33333333%;}
-.col-11 {width: 91.66666667%;}
-.col-12 {width: 100%;} */
-
 
 /* For mobile phones. */
 @media (max-width: 46.25em){
@@ -109,10 +95,7 @@
   .menu-bar {
     display: none;
   }
-  .grid-fill{
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  }
   img {
-    height: 100%;
+    height: 80%;
   }
 }
