@@ -13,7 +13,6 @@
   --clr-icons: #007FFF;
   --clr-button: #007FFF;
 }
-/* conflit */
 
 *, ::after, ::before {
   margin: 0;
@@ -79,7 +78,7 @@ button {
 textarea,
 .input input{
   padding: 16px;
-  border: 1px solid var(--lgrey);
+  border: solid var(--lgrey);
   border-radius: 4px;
   font-size: 16px;
   margin-bottom: 12px;
