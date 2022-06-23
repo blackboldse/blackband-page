@@ -171,6 +171,7 @@ textarea,
       min-width: 160px;
       z-index: 10;
       display: none;
+      border-radius: 0 0 4px 4px;
     }
     #nav li:hover .subnav {
       display: block;
@@ -286,7 +287,8 @@ textarea,
 .list-tickets{
   background-color: var(--white);
   margin-top: 32px;
-  border: 1px solid var(--lgrey);
+  border: solid var(--lgrey);
+  border-radius: 4px;
 }
 .list-tickets li {
   border-bottom: 1px solid var(--lgrey);
@@ -305,7 +307,7 @@ textarea,
   background: var(--lred);
   padding: 2px 6px;
   margin-left: 16px;
-
+  border-radius: 4px;
 }
 .quantity{
   float: right;
