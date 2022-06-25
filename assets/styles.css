@@ -12,7 +12,7 @@
   --docsearch-primary-color: #007FFF;
   --clr-icons: #007FFF;
   --clr-button: #007FFF;
-
+  --favicon: @import url(https://cdn-icons-png.flaticon.com/512/4472/4472592.png);
 }
 
 *, ::after, ::before {
@@ -70,8 +70,6 @@ button {
   display: flex;
   flex-wrap: 16px;
   gap: 16px;
-  /* grid-gap: 16px; */
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
 }
 .txt-white {
   color: var(--white) !important;
@@ -130,9 +128,6 @@ textarea,
   box-shadow: var(--shadow);
   z-index: 1;
 }
-/* #header > ul {
-  display: flex;
-} */
 
 /* ================ SECTION NAV ================*/
 #nav {
