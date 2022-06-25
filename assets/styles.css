@@ -328,17 +328,18 @@ textarea,
     .place-desc{
       padding: 0 16px;
     }
-    .location b, .date, .describe {
+    .location, .date, .describe {
       margin: 14px 0px;
       }
       .location{
+        font-weight: bolder;
         font-size: 15px;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
       }
       .date{
-        color: grey;
         font-size: 15px;
+        color: grey;
       }
       .describe{
         font-size: 14px;
